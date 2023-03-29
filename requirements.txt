@@ -1,0 +1,8 @@
+pyspark==3.2.1
+lxml
+fastapi==0.70.1
+uvicorn==0.16
+wget==3.2
+numpy==1.21.6
+pandas
+python-multipart

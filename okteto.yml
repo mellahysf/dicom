@@ -1,0 +1,9 @@
+name: dicom-file-service
+command: sh
+image: okteto/python:3
+volumes:
+  - /root/.cache/pip
+sync:
+  - .:/app
+forward:
+- 5000:5000

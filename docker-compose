@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  
+  dicom-file-service:
+    working_dir: /app
+    build: "./"
+    restart: always
+    ports:
+    - '5000:5000'
+    command: ["sh", "main.sh"]
+    networks:
+    - all
+ 
+networks:
+  all:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
